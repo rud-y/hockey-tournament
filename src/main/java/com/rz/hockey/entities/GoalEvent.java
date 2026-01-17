@@ -9,7 +9,7 @@ public class GoalEvent {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+    @Column(name = "goal_minute")
     private int minute;
 
     @Enumerated(EnumType.STRING)
@@ -23,6 +23,8 @@ public class GoalEvent {
 
     @ManyToOne
     private Match match;
+
+    public GoalEvent() {}
 
     public GoalEvent(int minute, PeriodType period, Player scorer, Team team, Match match) {
         this.minute = minute;

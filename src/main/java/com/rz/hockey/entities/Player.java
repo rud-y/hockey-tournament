@@ -1,5 +1,6 @@
 package com.rz.hockey.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 @Entity
@@ -14,6 +15,8 @@ public class Player {
 
     @ManyToOne
     private Team team;
+
+    public Player() {}
 
     public Player(String name, Team team) {
         this.name = name;

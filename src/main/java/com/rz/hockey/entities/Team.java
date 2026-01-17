@@ -17,7 +17,9 @@ public class Team {
     private String shortName;
 
     @OneToMany(mappedBy = "team")
-    private List<Player> players = new ArrayList<Player>();
+    private List<Player> players = new ArrayList<>();
+
+    public Team() {}
 
     public Team(String name, String shortName) {
         this.name = name;

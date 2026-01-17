@@ -24,6 +24,8 @@ public class Match {
     @OneToMany(mappedBy = "match", cascade = CascadeType.ALL)
     private List<GoalEvent> goals = new ArrayList<>();
 
+    public Match() {}
+
     public Match(Team homeTeam, Team awayTeam, boolean completed) {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;

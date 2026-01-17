@@ -23,6 +23,8 @@ public class AssistEvent {
     @ManyToOne
     private Match match;
 
+    public AssistEvent() {}
+
     public AssistEvent(int minute, PeriodType period, Player assist, Team team, Match match) {
         this.minute = minute;
         this.period = period;

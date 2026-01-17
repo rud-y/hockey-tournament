@@ -1,5 +1,4 @@
 package com.rz.hockey.entities;
-
 import com.rz.hockey.enums.StreakType;
 import jakarta.persistence.*;
 
